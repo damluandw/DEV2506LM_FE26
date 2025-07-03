@@ -1,0 +1,85 @@
+1. Table
+- Systax:
+    <table>
+       <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                ....
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                ...
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                ...
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                ...
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                ...
+            </tr>
+        </tfoot>
+    </table>
+
+- Một số thuộc tính dùng trong bảng: 
+    colspan, rowspan, cellspacing, cellpadding, witdh, border, algin
+
+
+2. Form
+- Systax:
+    <form method="" encryptype="" action=""> 
+        <input type="" name="" id="" />
+        <textara></textara>
+        <select>
+                <option></option>
+        </select>
+        <button></button>        
+    </form>
+
+- type: text, email, number, submit, button, Date, checkbox, radio, hidden, file
+
+
+<!-- 
+            Một số phím tắt:
+            - Shift+ Alt+F : format lại code
+            - Ctrl + D: Khoang các từ giống nhau
+            - shift + alt + lên/xuống : copy
+            - Nếu có | mờ thì dùng phím tab để trỏ tiếp
+            Lưu ý: 
+                + Nên viết tên thẻ và dùng tab để tự động sinh code
+                + Tránh viết <tên_thẻ 
+         -->
+
+
+Hướng dẫn git
+
+- Mới cài đặt:
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+
+- Up dữ liệu lên git:
+
+git add. 
+
+git commit -m "Nội dung cập nhật"
+
+git push

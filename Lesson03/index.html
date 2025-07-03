@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thẻ bố cục nội dung</title>
+    </head>
+    <body>
+        <!-- thẻ div dùng để nhóm các thành phần nội dung -->
+        <div>
+            <h3>Tiêu đề</h3>
+            <p>Nội dung đoạn văn</p>
+        </div>
+        <!-- Thẻ lable  -->
+        <form action>
+            <div>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+        </form>
+        <!-- Thẻ span inline: kết hợp với CSS để định dạng riêng cho văn bản -->
+        <p>
+            Lorem ipsum, <span style="color: red; font-weight: 900;">dolor
+                sit</span> amet consectetur adipisicing elit. Iste,
+            voluptatibus. Debitis impedit ducimus eos temporibus blanditiis. Nam
+            consequuntur fugit quaerat? Non autem ea mollitia! Repudiandae magni
+            officia consequuntur vel aliquam.
+        </p>
+
+        <!-- details sumary -->
+        <details>
+            <summary>Học HTML cơ bản</summary>
+            <p>Tìm hiểu cấu trúc HTML</p>
+            <p>Xây dựng giao diện web với thẻ HTML</p>
+        </details>
+
+        <!-- Thẻ mô tả tiến trình -->
+         <progress value="30" max="100"></progress>
+
+         <!-- datalist: hiện thị danh sách gợi ý -->
+        <input type="text" name="tenmonhoc" list="dsmon">
+        <datalist id="dsmon">
+            <option value="Học HTML"></option>
+            <option value="Tham khảo HTML"></option>
+            <option value="Học CSS"></option>
+            <option value="Học JavaScript"></option>
+            <option value="Học C#"></option>
+        </datalist>
+
+        <audio src="audio/Không tên - Đen.mp3" controls></audio>
+
+        <video src="video/2025-05-26 18-45-20.mp4" controls></video>
+
+    </body>
+</html>
