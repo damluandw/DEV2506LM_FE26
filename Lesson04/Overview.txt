@@ -1,0 +1,12 @@
+1. Bố cục trang html
+<header></header>
+<section></section>
+<footer></footer>
+
+2. Một thẻ bố cục
+- <nav></nav>
+- <acticlre></acticlre>
+- <aside><aside>
+- <div></div>
+- <lable></lable>
+- <span></span>

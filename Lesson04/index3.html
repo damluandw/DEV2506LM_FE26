@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bộ chọn thuộc tính</title>
+        <style>
+        /* bộ chọn *    */
+        *{
+            margin: 0;
+            padding: 0;
+            font: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Bộ chọn tag01 tag02: các thẻ tag02 nằm trong
+        tag01 sẽ được sử dụng CSS */
+        /* section p{
+            color: red;
+        } */
+        /* Bộ chọn tag01>tag02: các thẻ tag02 là thẻ con 
+        trực tiếp của thẻ tag01 */
+         /* section>p{
+            color: red;
+         } */
+        /* Bộ chọn tag01+tag02 : các thẻ tag02 cùng cấp với
+         thẻ tag01 và thẻ tag02 liền sau thẻ tag01*/
+        /* div+p{
+            background-color: yellow;
+        }
+
+        p+p{
+            color: green;
+        } */
+        /* Bộ chọn tag01~tag02:  các thẻ tag02 cùng cấp với
+        thẻ tag01 và thẻ tag02 nằm sau thẻ tag01*/
+        div~p{
+            background-color: yellow;
+        }
+
+        /* Bộ chọn tag01,tag02: các thẻ tag01 và tag02 đều
+        được sử dụng CSS */
+        p,h2{
+            color: red;
+        }
+
+
+    </style>
+    </head>
+    <body>
+        <div>Bộ chọn thuộc tính</div>
+
+        <!-- Bộ chọn tag01 tag02 -->
+        <!-- <section>
+        <p>Bộ chọn tag01 tag02</p>
+        <div>
+            <p>Bộ chọn tag01 tag02</p>
+        </div>
+    </section>
+    <p>Demo</p> -->
+        <!-- Bộ chọn tag01>tag02 -->
+        <!-- <section>
+            <p>Bộ chọn tag01>tag02</p>
+            <p>Bộ chọn tag01>tag02</p>
+            <div>
+                <p>Bộ chọn tag01>tag02</p>
+            </div>
+        </section>
+        <p>Demo</p> -->
+
+        <!-- Bộ chọn tag01+tag02 -->
+        <!-- <section>     
+            <div>
+                <p>Bộ chọn tag01+tag02</p>
+            </div>
+            <p>Bộ chọn tag01+tag02</p>
+            <p>Bộ chọn tag01+tag02</p> 
+            <p>Bộ chọn tag01+tag02</p>
+        </section>
+        <p>Demo</p> -->
+
+        <!-- Bộ chọn tag01~tag02 -->
+        <section>
+            <div>
+                <p>Bộ chọn tag01~tag02</p>
+            </div>
+            <p>Bộ chọn tag01~tag02</p>
+            <p>Bộ chọn tag01~tag02</p>
+            <p>Bộ chọn tag01~tag02</p>
+        </section>
+        <p>Demo</p>
+
+
+        <h2>Học CSS tại Dev</h2>
+
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chú ý</title>
+
+    </head>
+    <body>
+        <!-- 
+      - background: phông nền
+      - color: cho text
+      - border: đường viền
+      - display: flex,none,block,...
+      - font: 
+      - height: chiều cao
+      - witdh: chiều rộng
+      - line-height: 
+      - list-style: none
+      - margin/padding: khoảng cách
+      - position: absolute/relative/fixed
+      - top/right/left/bottom: vị trí (dùng chung với position)
+      - z-index (dùng chung với position)
+      - @font-face
+      - @keyframes
+      - opacity
+      - text-justify
+   -->
+
+        <!-- 
+        Đơn vị rem/em
+        ví dụ có 1 trang html có phần reset CSS
+        đặt font size là 16px;
+        - rem:
+            1rem = 16px
+        ví dụ có 1 trang html có phần reset CSS
+        đặt font size là 16px
+        khối cha mà là 20px
+        - em
+            1em = 20px
+        <html> -- 16px
+            <div>  --20px
+                <p>  -- 1em = 20px /1rem= 16px
+                    
+                </p>
+            </div>
+         </html>
+   
+   -->
+
+        <!-- Lưu ý: Mức độ ưu tiên trong CSS 
+            - Thuộc tính CSS sẽ được ưu tiên những CSS viết sau (cùng cấp bậc trỏ)
+            - !important -> id -> class/thuộc tính -> tên thẻ(cùng cấp bậc trỏ)            
+            - Trỏ càng gần/cãng chi tiết thẻ thì CSS càng được ưu tiên
+        -->
+        <!-- 
+            div>p{
+                color: yellow;
+            }
+
+            p {
+                color:red;
+            }
+            div {
+                color:green;
+            }           
+         -->
+        <div>
+            <p>
+
+            </p>
+        </div>
+        <p>
+
+        </p>
+    </body>
+</html>

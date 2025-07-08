@@ -78,7 +78,7 @@ git config --global user.email johndoe@example.com
 
 - Up dữ liệu lên git:
 
-git add. 
+git add . 
 
 git commit -m "Nội dung cập nhật"
 

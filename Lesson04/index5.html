@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuộc tính Position</title>
+    <style>
+        #box-1{
+            position: relative;
+            border: 3px solid red;
+            width: 400px;
+            height: 400px;
+        }
+        #box-2{
+            position: absolute;
+            border: 3px solid blue;
+            width: 300px;
+            height: 300px;
+            top: 50px;
+            right: 20px;
+        }
+        #box-3{
+            position: absolute;
+            border: 3px solid green;
+            width: 200px;
+            height: 200px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+     <div id="box-1">
+        <div id="box-2">
+            <div id="box-3">
+            </div>
+        </div>
+
+     </div>   
+</body>
+</html>

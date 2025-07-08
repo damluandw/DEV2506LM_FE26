@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>4 cách tương tác CSS với thẻ HTML</title>
+        <style>
+            /* Cách 1: Tương tác thông qua tên thẻ HTML */
+            h2{
+                color: red;
+                background-color: yellow;
+            }
+
+            /* Cách 2: Tương tác thông qua tên id của thẻ HTML */
+            #ten-id{
+                color: blueviolet;
+                background-color: aqua;
+            }
+
+            /* Cách 3: Tương tướng thông qua tên class của thẻ HTML */
+            .cl-green{
+                color: green;
+            }
+            /* Cách 4: Tương tác thông qua tên thuộc tính */
+            [thuoc-tinh]{
+                color: blue;
+            }
+
+            [type="text"]{
+                border: 2px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Cách 1: Tương tác thông qua tên thẻ HTML -->
+        <h2>
+            Tương tác thông qua tên thẻ HTML
+        </h2>
+        <h2>
+            Học CSS tại devmaster
+        </h2>
+        <h2>
+            Học CSS tại devmaster
+        </h2>
+        <!-- Cách 2:Tương tác thông qua tên id của thẻ HTML  -->
+        <h3 id="ten-id">
+            Tương tác thông qua tên id của thẻ HTML
+        </h3>
+
+        <!-- Cách 3: Tương tướng thông qua tên class của thẻ HTML -->
+        <div>
+            <h4 class="cl-green">
+                Tương tác thông qua tên class của thẻ HTML
+            </h4>
+            <p class="cl-green">
+                Học tại Devmaster
+            </p>
+        </div>
+
+        <!-- Cách 4: Tương tác thông qua tên thuộc tính  -->
+        <div>
+            <h5 thuoc-tinh="abc">
+                Tương tác thông qua tên thuộc tính
+            </h5>
+            <p thuoc-tinh="abc">
+                Học tại devmater
+            </p>
+
+            <label for="username">UserName</label>
+            <input type="text" name="username" id="username">
+            <br>
+            <label for="hoten">Họ và tên</label>
+            <input type="text" name="hoten" id="hoten">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+    </body>
+</html>
