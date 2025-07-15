@@ -1,0 +1,49 @@
+1. Cách sử dụng CSS
+    - CSS trên thẻ HTML
+    - CSS trong file HTML
+    - CSS ngoài file HTML
+2. Các cách tương tác CSS với thẻ HTML
+    - tương tác thông qua tên Id của thẻ HTML - #tên_id
+    - tương tác thông qua tên thẻ HTML - tên_thẻ
+    - tương tác thông qua tên class của thẻ HTML - .tên_class
+    - tương tác thông qua tên thuộc tính của thẻ HTML - [tên_thuộc_tính]
+3. Bộ chọn thuộc tính
+    - bộ chọn  * - chọn tất cả các thành phần html
+    - Các bộ chọn tag:
+        + tag01 tag02: chọn các tag02 nằm trong tag01
+        + tag01>tag02 : chọn tag02 nằm trong tag01 và là con trực tiếp của tag01
+        + tag01+tag02 : chọn tag02 cùng cấp với tag01 và tag02 nằm ngay sau tag01
+        + tag01~tag02 : chọn tag02 cùng cấp với tag01 và tag02 nằm sau tag01
+        + tag01,tag02 : chọn tag01 và tag02
+    - một bộ chọn: hover, before, after, first-child, last-child, checked, active,...
+4. Các thuộc tính CSS
+    - color
+    - background
+    - text-...
+    - font
+    - display: none, flex, block, float ....
+    - padding, margin
+    - position: relative, absolute, fixed
+    - left,right,top,bottom (dùng với position)
+    - z-index: (dùng với position)
+    - opacity - độ mờ
+    - border - đường viền
+    - border-radius - độ cong của các góc
+    - width, height : rộng/cao (max-min)
+    - list-stype: none
+    - line-height - độ dãn dòng
+    - content: định nghĩa giá trị cho thuộc tính before/after
+...
+5. Mức độ ưu tiên trong CSS
+    - Thuộc tính CSS sau sẽ được ưu tiên sử dụng (cùng tên bộ chọn)
+    - !important -> tên_id -> .tên_class/[tên_thuộc_tính] -> tên_thẻ
+    - Chỏ càng gần/càng chi tiết sẽ càng được ưu tiên sử dụng
+
+6. Các đơn vị kích thước
+    -  px, %, rem,...
+7. Các đơn vị màu sắc
+    - tên tiếng anh: blue, green, black,...
+    - mã RGB:  RGB(0,0,0) = màu đen
+    - mã HEX: #fff = #ffffff = màu trằng
+
+8. Responsive
