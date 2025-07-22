@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+
+    <script>
+        // 1. Biến
+        // Systax: 
+        //  var tên_biến
+        var userName;
+        var user_Name01;
+        var _userName01;
+        // var 5userName; - lỗi
+        // var user Name ; -lỗi
+        var username = 'Devmaster.vn';
+        userName = 'Devmaster';
+        var number = 100;
+        // var check = true;
+        var number2 = 2.5;
+        document.writeln(username + '<br/>');
+        document.writeln(number + '<br/>');
+
+        // 2. Hàm alert(); confirm(); prompt
+        // 2.1. alert - đưa thông báo
+        // alert("Hello world");
+        // // 2.2 Confirm() - trả về giá trị đúng sai
+        // var kiemtra = confirm("Bạn đang học tại Devmaster");
+        // document.writeln(kiemtra + '<br/>')
+
+        // // 2.3. Promt() -  - trả về giá trị được nhập vào
+        // var name = prompt('Tên của bạn là gì')
+        // document.writeln('Xin chào :' + name + '<br/>')
+        // console.log('name' + name)
+        // 3. Toán tử số học
+        // 4. Toán tử so sánh
+        var check = 1 == '1';        
+        document.writeln('<br/>so sánh ==: ' + check);
+
+        check = 1 === '1';
+        document.writeln('<br/>so sánh ===: '+check );
+        
+        check = 1 == 1;        
+        document.writeln('<br/>so sánh ==: ' + check);
+
+        check = 1 === 1;
+        document.writeln('<br/>so sánh ===: '+check );
+
+
+         check = 1 == 2;        
+        document.writeln('<br/>so sánh ==: ' + check);
+
+        check = 1 === 2;
+        document.writeln('<br/>so sánh ===: '+ check );
+
+        // 5. Toán tử logic (AND(&&), OR (||), NOT (!))
+        // 6. Toán tử gán
+        // systax: bien += 5;  <=> bien = bien + 5;
+        // ví dụ:  bien = 3;
+        //         bien += 5  => bien = 8 
+
+        // 7. Cấu trúc lệnh rẽ nhánh
+        // 7.1. if else
+        // systax: 
+        //      if(mệnh_đề_điều_kiện){
+        //          câu_lệnh_xử_lý
+        //      }else if(mệnh_đề_điều_kiện){
+        //          câu_lệnh_xử_lý
+        //      }...
+        //      else{
+        //          câu_lệnh_xử_lý
+        //      }
+        //
+        if(5>3){
+            document.writeln('</br> 5>3')
+        }
+
+        if(5<3){
+            document.writeln('</br> 5<3')
+        }else if(5===3){
+            document.writeln('</br> 5=3')  
+        }else{
+            document.writeln('</br> 5>3')
+        }
+
+        // 7.2. switch case
+        // systax:
+        // switch(bien){
+        //          case gia_tri_1:
+        //                  câu_lệnh_xử_lý;
+        //                  break;
+        //          case gia_tri_2:
+        //                  câu_lệnh_xử_lý;
+        //                  break;
+        //          ...
+        //          default:
+        //                  câu_lệnh_xử_lý;
+        //                  break;
+        //}
+
+        var thang = 2;
+        switch(thang){
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    document.writeln("</br> Tháng này có  31");
+                    break;
+                case 2:
+                    document.writeln("</br> Tháng này có 28 ngày");
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    document.writeln("</br> Tháng này có 30");
+                    break;
+                default:
+                    document.writeln("</br> Nhập sai tháng");
+                    break;
+
+        }
+
+        // 8. Vòng lặp
+        // 8.1. for
+        // Systax: 
+        //          for(khởi_tạo_giá_trị_min/max; mệnh_đề_điều_kiện; biến_tăng/giảm){
+        //              câu_lệnh_xử_lý;
+        //          }
+        document.writeln('</br> Dãy số từ 0 đến  9: ');
+        for (var i = 0 ; i < 10 ; i++ ){
+            document.writeln(i+',');
+        }
+        // 8.2. do while
+        // systax: 
+        //          do{
+        //              câu_lệnh_xử_lý;
+        //          }while(mệnh_đề_điều_kiện)
+
+        var kt = false;
+        do{
+             document.writeln("</br> Hello world");
+            //  kt = false;
+        }while(kt);
+
+        // 8.3. while
+        // systax: 
+        //          while(mệnh_đề_điều_kiện){
+        //              câu_lệnh_xử_lý;
+        //          }
+        var temp =1;
+        while(temp <=5){
+            document.writeln("</br> "+ temp);
+            temp++;
+        }
+
+        // 8.4. foreach/ for in
+
+        // 9. Mảng
+        // 9.1 Khai báo mảng
+        // systax: var tên_mảng = []
+
+        var arr = [];
+        var arr1 = [1,2,3,'devmaster', true]
+
+        // 9.2. Gọi giá trị
+        // systax: tên_mảng[vị_trí]
+        document.writeln('<br/>Giá trị mảng arr1[3] :',arr1[3])
+
+        for(var i = 0; i< arr1.length; i++){
+            document.writeln('<br/>Giá trị mảng arr1['+i+'] :',arr1[i])
+        }
+
+         // 9.3. Gán giá trị
+        // systax: tên_mảng[vị_trí] = giá_trị
+        arr1[2] = 23
+        document.writeln('<br/>Giá trị mảng arr1[2] :',arr1[2])
+        for(var i = 0; i< arr1.length; i++){
+            document.writeln('<br/>Giá trị mảng arr1['+i+'] :',arr1[i])
+        }
+
+
+        // 10.Hàm
+        // Systax:
+        //        fuction  tên_hàm(biến_1, biến_2, biến_3....){
+        //              các_câu_lệnh_xử_lý;
+        //              return giá_trị_trả_về; (có hoặc không đều được)
+        //          }
+
+        function checkNumber(number){
+            if(number%2===0){
+                document.writeln("<br/>"+ number +" - Số chẵn")
+            }else{
+                document.writeln("<br/>" + number +" - Số lẻ")
+            }
+        }
+        checkNumber(55555)
+        checkNumber(2556)
+
+        // 11. Chuỗi
+        
+    </script>
+</body>
+
+</html>
