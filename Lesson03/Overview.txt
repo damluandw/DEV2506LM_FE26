@@ -83,3 +83,6 @@ git add .
 git commit -m "Nội dung cập nhật"
 
 git push
+
+- Update lại
+ git pull
