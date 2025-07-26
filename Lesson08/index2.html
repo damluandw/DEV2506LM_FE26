@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng nhập</title>
+        <style>
+        .err{
+            color: red;
+            display: none;
+        }
+        /* #thong-bao-loi{
+            position: absolute;
+            top: 100%;
+            right: 100%;
+        } */
+    </style>
+    </head>
+    <body>
+        <!-- <div id="thong-bao-loi">
+            <p>Thông báo lỗi</p>
+        </div> -->
+        <form action method="post">
+            <div>
+                <label for="username">UserName</label>
+                <input  type="text" name="username" id="username">
+                <p class="err err-blank err-username">UserName không được để
+                    trống</p>
+                <p class="err err-format err-username">UserName không đúng định dạng</p>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <p class="err err-blank err-password">Password không được để
+                    trống</p>
+                <p class="err err-format err-password">Password không không đúng định
+                    dạng</p>
+            </div>
+            <button id="dangnhap" onclick="DangNhap(event)">Đăng nhập</button>
+        </form>
+        <script>
+        function DangNhap(event){
+            event.preventDefault();
+            var userName = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var regxEmail =/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+            var regxPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            // console.log(userName)
+            // console.log(password)
+            if (userName=="" || userName == null){
+                document.querySelectorAll(".err.err-blank")[0].style.display = "block";
+            }else{
+                 document.querySelectorAll(".err.err-blank")[0].style.display = "none";
+                if( regxEmail.test(userName)){
+                    document.querySelectorAll(".err.err-format")[0].style.display = "none";
+                }else{
+                     document.querySelectorAll(".err.err-format")[0].style.display = "block";
+                }
+            }
+            
+            if (password=="" || password == null){
+                document.querySelectorAll(".err.err-blank")[1].style.display = "block"
+            }else{
+                document.querySelectorAll(".err.err-blank")[1].style.display = "none";
+                if( regxPassword.test(password)){
+                    document.querySelectorAll(".err.err-format")[1].style.display = "none";
+                }else{
+                     document.querySelectorAll(".err.err-format")[1].style.display = "block";
+                     document.querySelectorAll(".err.err-format")[1].style.background = "yellow";
+                     document.querySelectorAll(".err.err-format")[1].innerHTML = "Sai định dạng";
+                }
+            }
+            
+        }
+        
+        // var userNameElement = document.getElementById('username');
+        
+        // userNameElement.addEventListener('onblur', () =>{
+
+        // })
+        var DangNhapElement = document.getElementById('dangnhap');
+        DangNhapElement.addEventListener('onclick', () =>{
+
+        })
+    </script>
+    </body>
+</html>

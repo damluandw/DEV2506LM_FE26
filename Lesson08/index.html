@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" name="username" id="username">
+        <p class="errorr">1</p>
+        <p class="errorr">2</p>
+        <p class="errorr">3</p>
+        <p></p>
+        <button class="errorr">btn</button>
+        <script>
+
+        /// DOM Element
+        // Cách 1: tương tác với thẻ HTML thông qua id của thẻ HTML 
+        // systax: document.getElementById('tên_id')
+        var elementId = document.getElementById('username');
+        console.log(elementId);
+        // Cách 2: Tương tác với thẻ HTML thông qua class của thẻ HTML
+        // systax: document.getElementsByClassName('tên_class')
+         var elementClass = document.getElementsByClassName('errorr');
+         console.log(elementClass);
+
+        // Cách 3: Tương tác với thẻ HTML thông qua tên thẻ HTML
+        // systax: document.getElementsByClassName('tên_thẻ_HTML')
+         var elementHTML = document.getElementsByTagName('p');
+         console.log(elementHTML);
+        // Cách 4: Tương tác với thẻ HTML thông qua cú pháp CSS Selector
+        //systax: document.querySelectorAll('CSS_Selector');
+        var elementCSSSelector = document.querySelectorAll('p');
+        var elementCSSSelector1 = document.querySelectorAll('.errorr');
+        var elementCSSSelector2 = document.querySelectorAll('#username');
+        console.log(elementCSSSelector);
+         console.log(elementCSSSelector1);
+        console.log(elementCSSSelector2);
+
+
+
+
+        /// DOM Object
+        // systax: var tên_Object =  {};
+        //          var tên_object = { 
+        //                              tên_thuộc_tính_1: giá_trị_1,
+        //                              tên_thuộc_tính_2: giá_trị_2,
+        //                              ...
+        //                              tên_function_1: function(){},
+        //                              ...
+        //                            }
+            var Sinh_Vien = {}
+            var SinhVien =  {   
+                                id: '',
+                                fullname: '',
+                                age: 18,
+                                gender: true,
+                                hanhdong: function(){
+                                    console.log("đây là hành động của SV")
+                                }
+                            };
+        // gán giá trị: tên_object.tên_thuộc_tính/tên_phương_thức = giá_trị/function()
+            Sinh_Vien.fullname = "Devmaster";
+            Sinh_Vien.age = 20;
+        // lấy giá trị của biến : tên_object.tên_thuộc_tính/tên_phương_thức
+            document.writeln("<br/>" + Sinh_Vien.fullname + " - " + Sinh_Vien.age );
+            document.writeln(`<br/> ${Sinh_Vien.fullname} - ${Sinh_Vien.age}` );
+        
+                            
+
+    </script>
+    </body>
+</html>

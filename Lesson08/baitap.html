@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bài tập</title>
+    </head>
+    <body>
+        <script>
+        /*
+            1. In ra ngoài màn hình số từ 1 đến 100
+            (có thể sử dụng 2/3 loại vòng lặp)
+            2. Nhập vào 1 số bất kỳ. Kiểm tra số đó có phải là số nguyên tố
+            hay không
+            3. In ra các số nguyên tố chạy từ 1 đến 100
+            4. Viết chương trình biện luận cho phương trình bậc 1
+            5. Viết chương trình biện luận cho phương trình bậc 2
+            (có thể kết hợp sử dụng hàm để tiết kiệm thời gian)
+        */
+
+
+        let num = 0
+       for (let i =0; i <=100; i++){
+        document.writeln(i);
+
+       }
+
+       let checkNumber = function(x){
+        if (x < 2) {
+            return false
+        }
+        else {
+            for (let i = 2; i < x; i++) {
+               if (x % i >0) {
+                return true;  
+               }
+               else {
+                return false;
+               }; 
+            }
+        }
+       }
+
+      document.writeln(checkNumber(13));
+
+
+     for (let i = 2; i <= 100 ; i++) {
+        if (checkNumber(i) == true) {
+            document.writeln(i);
+        }
+     }
+
+
+    //  Phương trình bậc 1: ax + b =0
+    var a = 4;
+    var b = 1;
+    if(a==0){
+        if(b==0){
+            document.writeln("<br/>phương trình có vô số nghiệm");
+        }else{
+            document.writeln("<br/>phương trình vô nghiệm");
+        }
+    }else{
+        document.writeln("<br/>phương trình có nghiệm duy nhất: " + -b/a)
+    }
+
+    // C2
+    if(a ==0 && b==0){
+         document.writeln("<br/>phương trình có vô số nghiệm");
+    }else if(a ==0 && b!=0){
+        document.writeln("<br/>phương trình vô nghiệm");
+    }else{
+        document.writeln("<br/>phương trình có nghiệm duy nhất: " + -b/a)
+    }
+
+    // đưa function
+    function ptb1(a,b){
+        if(a ==0 && b==0){
+            document.writeln("<br/>phương trình có vô số nghiệm");
+        }else if(a ==0 && b!=0){
+            document.writeln("<br/>phương trình vô nghiệm");
+        }else{
+            document.writeln("<br/>phương trình có nghiệm duy nhất: " + -b/a)
+        }
+    }
+    ptb1(6,-8)
+
+    // ax^2 + bx + c =0 
+    
+
+    </script>
+    </body>
+</html>
