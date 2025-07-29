@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng nhập</title>
+        <style>
+        .err{
+            color: red;
+            display: none;
+        }
+    </style>
+    </head>
+    <body>
+        <form action method="post">
+            <div>
+                <label for="username">UserName</label>
+                <input type="text" name="username" id="username">
+                <p class="err err-blank">UserName không được để
+                    trống</p>
+                <p class="err err-format">UserName không đúng định
+                    dạng</p>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <p class="err err-blank">Password không được để
+                    trống</p>
+                <p class="err err-format">Password không không đúng
+                    định
+                    dạng</p>
+            </div>
+            <button id="dangnhap">Đăng nhập</button>
+        </form>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            // siblings(), parent(), child()
+            $(document).ready(function(){
+
+                function checkFormat(regx,value){
+                     if(regx.test(value)){
+                        $(this).siblings('.err-format').hide()
+                     }else{
+                        $(this).siblings('.err-format').show()
+                     }
+                }
+
+                $('input').on('blur', function(){
+                    var regxEmail =/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+                    var regxPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+                    var tmp = $(this).val();
+                    if(tmp == "" || tmp == null){
+                        $(this).siblings('.err-blank').show()
+                        // $(this).siblings('.err-blank').css('display','block')
+                    }else{
+                        $(this).siblings('.err-blank').hide()
+                        //$('selector').attr('tên_attr') - get
+                        // $('selector').attr('tên_attr','giá_trị') - set
+                        // console.log($(this).attr('id'))
+                        if($(this).attr('id') ==  "username"){
+                            checkFormat(regxEmail,tmp)
+                        }else{
+                            checkFormat(regxPassword,tmp)
+                        }
+                    }
+                })
+
+            })
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Render</title>
+    <style>
+        .w-100{
+            width: 100%;
+        }
+        #list-product{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .box-product{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <section id="list-product">
+        <!-- <div class="box-product">
+            <div class="img-product">
+                <img class="w-100" src="https://cdn.tgdd.vn/Products/Images/42/329149/iphone-16-pro-max-sa-mac-thumb-1-600x600.jpg" alt="">
+            </div>
+            <div>
+                <h3>Sản phẩm 1</h3>
+                <p>3000000</p>
+            </div>
+        </div>
+        <div class="box-product">
+            <div class="img-product">
+                <img class="w-100" src="https://cdn.tgdd.vn/Products/Images/42/329149/iphone-16-pro-max-sa-mac-thumb-1-600x600.jpg" alt="">
+            </div>
+            <div>
+                <h3>Sản phẩm 1</h3>
+                <p>3000000</p>
+            </div>
+        </div>
+        <div class="box-product">
+            <div class="img-product">
+                <img class="w-100" src="https://cdn.tgdd.vn/Products/Images/42/329149/iphone-16-pro-max-sa-mac-thumb-1-600x600.jpg" alt="">
+            </div>
+            <div>
+                <h3>Sản phẩm 1</h3>
+                <p>3000000</p>
+            </div>
+        </div> -->
+    </section>
+
+
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var listPro = [
+            {
+              id : 'SP01'  ,
+              name: 'Sản phẩm 1',
+              img : 'https://cdn.tgdd.vn/Products/Images/42/329149/iphone-16-pro-max-sa-mac-thumb-1-600x600.jpg',
+              price: 90000,
+              priceOld: 100000,
+              quatity: 6,
+              status: true,
+            },
+            {
+              id : 'SP02'  ,
+              name: 'Sản phẩm 2',
+              img : 'https://cdn.tgdd.vn/Products/Images/42/329149/iphone-16-pro-max-sa-mac-thumb-1-600x600.jpg',
+              price: 90000,
+              priceOld: 100000,
+              quatity: 6,
+              status: true,
+            },
+            {
+              id : 'SP03'  ,
+              name: 'Sản phẩm 3',
+              img : 'https://cdn.tgdd.vn/Products/Images/42/329149/iphone-16-pro-max-sa-mac-thumb-1-600x600.jpg',
+              price: 90000,
+              priceOld: 100000,
+              quatity: 6,
+              status: true,
+            },
+            {
+              id : 'SP04'  ,
+              name: 'Sản phẩm 4',
+              img : 'https://cdn.tgdd.vn/Products/Images/42/329149/iphone-16-pro-max-sa-mac-thumb-1-600x600.jpg',
+              price: 90000,
+              priceOld: 100000,
+              quatity: 6,
+              status: true,
+            },
+        ];
+
+        function renderPro(pro){
+            let tmp = `<div class="box-product">
+                            <div class="img-product">
+                                <img class="w-100" src="${pro.img}" alt="">
+                            </div>
+                            <div>
+                                <h3>${pro.name}</h3>
+                                <p>${pro.price}</p>
+                            </div>
+                        </div>`;
+            return tmp
+        }
+
+        function renderListPro(list){
+            // debugger;
+            console.log(list)
+            // var listPro=``;
+            for(i=0; i < list.length; i++ ){
+                // console.log(list[i])
+                var pro = renderPro(list[i]);
+                $('#list-product').append(pro);
+                // listPro += pro; 
+            }
+            //  $('#list-product').html(listPro)
+        }
+
+        renderListPro(listPro)
+
+    </script>  
+</body>
+</html>
