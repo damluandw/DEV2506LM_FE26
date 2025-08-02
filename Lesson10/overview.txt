@@ -1,0 +1,68 @@
+1. CSS
+1.1. Kn: CSS là ngôn ngữ định kiểu
+1.2. Cách sử dụng CSS
+    - 3 Cách
+1.3. Tương tác CSS với thẻ HTML
+    - 4 cách:
+        + tên thẻ HTML
+        + tên Id của thẻ HTML
+        + tên class của thẻ HTML
+        + tên thuộc tính (attribute) của thẻ HTML
+1.4. Thay đổi thuộc tính CSS
+    - tên_thuộc_tính_CSS:  giá_trị_thuộc_tính;
+1.5. Đơn vị: px, %, rem, em
+1.6. đơn vị màu sắc: tên_màu; RGB(); hexcode - #ffffff
+1.7. Bộc chọn CSS
+    - tag
+    - *
+    - tag01 tag02
+    - tag01 > tag02
+    - tag01 + tag02
+    - tag01 ~ tag02
+    - tag01, tag02
+    - ...
+
+1.8. Mức độ ưu tiên trong CSS
+    - CSS viết sau/dưới thì sẽ được ưu tiên sử dụng
+    - !important -> tên_id -> class/tên_thuộc_tính -> tên_thẻ_HTML
+    - Trỏ càng chi_tiêt/cần gần sẽ được ưu tiên sử dụng
+
+2. JavaScript
+2.1. Kn: JavaScript là ngôn ngữ lập trình kịch bản
+2.2. Cách sử dụng JavaScript
+    - 3 Cách
+
+2.3. Tương tác JS với thẻ HTML - DOM/Jquerry
+2.3.1. DOM
+    - 4 cơ bản:
+        + thông qua tên Id của thẻ HTML: 
+        + thông qua tên class của thẻ HTML
+        + thông qua tên thẻ HTML
+        + thông qua cú pháp CSS selecter
+2.3.2. Jquerry
+    - thông quá cú pháp CSS selecter : $('cú_pháp_CSS_Selector')
+
+2.4. Biến/object/mảng,... - khai báo biên + gán trá trị + gọi
+2.5. Cấu trúc điều kiện - if else/ swicth case
+2.6. Vòng lặp - for, do while, while , foreach, for on
+2.7. String - hàm xử lỷ
+2.8. Hàm - function 
+
+3. DOM/Jquerry
+- Event :  onclick, ondbclick, onchange,.. - viết trên thẻ HTML 
+3.1. DOM
+- không cần import thư viện
+- từ khóa: document
+- listenEvent: addEventListener('sự_kiện', function(){ xử_lý })
+- navigation: children, subilings, parent
+- HTML: writeln, write,...
+- CSS: style.thuộc_tính = 'giá_trị_thuộc_tính'
+
+3.2. Jquerry
+- cần import thư viện để sử dụng
+- $()
+- listenEvent: on('sự_kiện', function(){ xử_lý })
+- navigation: children(), subilings(), parent()
+- HTML: innerHTML(), HTML()
+- CSS: .css('tên_thuộc_tính','giá_trị_thuộc_tính')
+

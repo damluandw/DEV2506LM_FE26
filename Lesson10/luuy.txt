@@ -1,0 +1,12 @@
+1. Cách nhớ Bootstrap
+tên_thuộc_tính-kích_thước-giá_trị_thuộc_tính
+
+
+tên_thuộc_tính : có thể là tên hoăc tên là viết tắt trong CSS
+VD: text, bg, d,...
+kích_thước: kích thước màn hình được áp dụng và có thể có hoặc không
+từ khóa: sm, md, lg, xl, xxl
+VD: col-lg-1, d-xl-flex, d-md-none
+
+giá_trị_thuộc_tính: giá trị thuộc tính hoặc giá trị viết tắt trong CSS
+
