@@ -1,0 +1,120 @@
+/* Begin Banner */
+
+/* #banner h2 {
+    text-transform: uppercase;
+    color: #2c2e53;
+    font-size: 2.9rem;
+    font-family: 'Gotham-Ultra';
+}
+
+#banner h2>span {
+    text-transform: uppercase;
+    color: #c39f70;
+    font-size: 2.9rem;
+    font-family: 'Gotham-Ultra';
+} */
+
+#banner {
+    background-image: url(../imgs/banner_trangchu.jpg);
+    height: 56.5625rem;
+    margin-top: 3.75rem;
+}
+
+#banner h2,
+#banner h2>span {
+    text-transform: uppercase;
+    font-size: 2.9rem;
+    font-family: 'Gotham-Ultra';
+}
+
+#banner h2 {
+    color: #2c2e53;
+}
+
+#banner h2>span {
+    color: #c39f70;
+}
+
+#banner p {
+    max-width: 34.69rem;
+    text-align: justify;
+}
+
+#banner a {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-family: 'Gotham-Ultra';
+    color: #fff;
+    background-color: #c39f70;
+    padding: 1.3rem 2rem;
+}
+
+#banner .container {
+    position: relative;
+}
+
+#banner .container>div {
+    position: absolute;
+    left: 3.25rem;
+    top: 12.5rem;
+}
+
+/* End Banner */
+/* Begin Category */
+#category {
+    background-color: #f3f3f3;
+    height: 28.75rem;
+    /* padding-bottom: 6.25rem;     */
+}
+
+#category .container {
+    position: relative;
+}
+
+#category .container>div {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+    position: absolute;
+    top: -3.75rem;
+    background-color: #fff;
+}
+
+/* #category .box-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+#category .box-category{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#category .img-category {
+    max-width: 10.75rem;
+    margin: auto;
+}
+
+#category h3 {
+    text-align: center;
+}
+
+#category h3>a {
+    color: #2c2e53;
+    font-family: 'Gotham-Ultra';
+}
+
+/* End Category */
+
+/* Begin -Product */
+#products .btn-product{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    
+}
+
+
+
+/* End Product */
