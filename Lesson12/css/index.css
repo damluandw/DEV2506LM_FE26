@@ -1,0 +1,45 @@
+/* #banner h2 {
+    text-transform: uppercase;
+    color: #2c2e53;
+    font-size: 2.9rem;
+    font-family: 'Gotham-Ultra';
+}
+
+#banner h2>span {
+    text-transform: uppercase;
+    color: #c39f70;
+    font-size: 2.9rem;
+    font-family: 'Gotham-Ultra';
+} */
+
+#banner{
+    background-image: url(../imgs/banner_trangchu.jpg);
+    height: 51.375rem;
+}
+
+#banner h2,
+#banner h2>span {
+    text-transform: uppercase;
+    font-size: 2.9rem;
+    font-family: 'Gotham-Ultra';
+}
+
+#banner h2 {
+    color: #2c2e53;
+}
+
+#banner h2>span {
+    color: #c39f70;
+}
+#banner p{
+    max-width: 34.69rem;
+    text-align: justify;
+}
+#banner a{
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-family: 'Gotham-Ultra';
+    color: #fff;
+    background-color: #c39f70;
+    padding: 1.3rem 2rem;
+}
